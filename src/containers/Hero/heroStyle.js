@@ -12,6 +12,7 @@ export const HeroWrapper = styled.section`
     flex-direction: column;
     align-items: start;
     text-align: left;
+    margin: 50px;
   }
   .hero-buttons{
     margin-top: 20px;
@@ -49,7 +50,7 @@ export const HeroWrapper = styled.section`
     }
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 750px) {
     flex-direction: column;
     text-align: center;
     img{
