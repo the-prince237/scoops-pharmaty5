@@ -27,13 +27,13 @@ const Product = ({index, product}) => {
       <ProductBody>
         <div className='description'>
           <div className='icon'><BsInfo  /></div>
-          <p>{description}</p>
+          <p className='text1'>{description}</p>
         </div>
       </ProductBody>
       <ToTreats>
         <div className="icon"><FaDisease /></div>
         <div className="items">
-          {toTreat.map((tt, index) => (<span key={index}>{tt}</span>))}
+          {toTreat.map((tt, index) => (<span className='text1' key={index}>{tt}</span>))}
         </div>
       </ToTreats>
     </ProductWrapper>

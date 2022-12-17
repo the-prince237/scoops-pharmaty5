@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const ProductWrapper = styled.div`
   margin-top: 80px;
   padding: 10px 25px;
-  width: 300px;
-  border-radius: 25px;
+  width: 400px;
+  border-radius: 10px;
   background: linear-gradient(145deg, #111, #222, #333, #555, #666);
   position: relative;
   border-bottom: green solid 3px;
@@ -18,8 +18,8 @@ export const ProductImage = styled.div`
   font-size: 12px;
   color: #333;
   background: white;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   position: absolute;
   top: -50px;
   left: 25px;
@@ -56,7 +56,8 @@ export const ProductTypes = styled.div`
 `
 
 export const ProductBody = styled.div`
-  margin-top: 15px;
+  margin-top: 65px;
+  margin-bottom: 50px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -65,7 +66,6 @@ export const ProductBody = styled.div`
     width: 100%;
     p{
       color: #fff;
-      font-size: 14px;
       opacity: 0.8;
     }
     .icon{
@@ -109,7 +109,6 @@ export const ToTreats = styled.div`
       background: var(--color-main);
       padding: 5px 15px;
       border-radius: 20px;
-      font-size: 12px;
       :last-child{
         background: white; 
         color: var(--color-main);
