@@ -7,7 +7,7 @@ const Products = () => {
   return (
     <ProductsWrapper className='section__margin'>
       <h1 className="title2">Nos Produits Fars</h1>
-      <p className="text2">Nos produits rassemblent les meilleurs ressources que vous trouverez. Vous les connaissez bien, vous pouvez leur faire confiance !</p>
+      <p className="text1">Nos produits rassemblent les meilleurs ressources que vous trouverez. Vous les connaissez bien, vous pouvez leur faire confiance !</p>
       <ProductsList>
         {
           products.map((prod, index) => 

@@ -4,6 +4,9 @@ export const ProductsWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  p {
+    text-align: center;
+  }
 `
 
 export const ProductsList = styled.div`
