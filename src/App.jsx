@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import './App.css';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { Products ,Specialities, Hero, Mission, Header, Footer, Testimonials } from './containers'
+import { Products ,Specialities, Hero, Mission, Header, Footer } from './containers'
 
 function App() {
 
@@ -21,7 +21,7 @@ function App() {
       <Mission />
       <Specialities />
       <Products />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </div>
   );
