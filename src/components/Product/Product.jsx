@@ -21,7 +21,9 @@ const Product = ({index, product}) => {
         {picture}-{index}
       </ProductImage>
       <ProductHeader>
-        <h1>{name}</h1>
+        <h1>{name.split(" ").map((word, index) => (
+          <div key={`word-${index}-${word}`}>{word}</div>
+        ))}</h1>
         <ProductTypes>{types.map((type, index) => (<span key={index}>{type}</span>))}</ProductTypes>
       </ProductHeader>
       <ProductBody>

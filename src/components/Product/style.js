@@ -9,6 +9,9 @@ export const ProductWrapper = styled.div`
   position: relative;
   border-bottom: green solid 3px;
   color: white;
+  @media screen and (max-width: 500px){
+    width: 300px;
+  }
 `
 
 export const ProductImage = styled.div`
