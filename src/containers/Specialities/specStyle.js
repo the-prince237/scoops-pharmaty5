@@ -31,10 +31,22 @@ export const SpecLink = styled.span`
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
+  & .spec-link__text{
+    @media screen and (max-width: 600px){
+      display: none;
+    }
+  }
+  & .spec-link__icon{
+    display: none;
+    @media screen and (max-width: 600px){
+      display: inline;
+    }
+  }
   :hover{
     border: ${({isActive}) => isActive ? "unset" : "solid 2px var(--color-secondary)"};
     color: ${({isActive}) => !isActive && " var(--color-secondary)"};
   }
+  
 `
 
 export const SpecDots = styled.div`

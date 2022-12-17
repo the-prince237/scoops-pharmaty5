@@ -8,7 +8,7 @@ import { BiMenu } from 'react-icons/bi'
 const Header = () => {
   return (
     <header>
-      <img src="" alt="scoops-pharmacy" data-aos="fade-right" className='logo' />
+      <img src="" alt="scoops-pharmacy" data-aos="fade-right" className='logo'/>
       <nav className='large-nav'>
         <ul>
           <li><a className='nav-link' href="#mission">Mission</a></li>
