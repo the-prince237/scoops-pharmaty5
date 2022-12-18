@@ -8,8 +8,8 @@ function App() {
 
   useEffect(() => {
     Aos.init({
-      duration: 2500,
-      delay: 200,
+      duration: 1000,
+      delay: 150,
     })
   })
 

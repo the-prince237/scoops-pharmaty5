@@ -4,6 +4,7 @@
   --text-color: rgba(0, 0, 0, 0.54);
   --subTitle-color: rgba(0, 0, 0, 0.87);
   --gradient-text: linear-gradient(115deg, rgba(53,122,56,1) 9%, rgba(2,181,255,1) 100%);
+  --gradient-text2: linear-gradient(115deg, white, var(--color-main) 20%, black 60%);
   --xl: ;
   --md: @media screen and (max-width: 700px);
   --sm: @media screen and (max-width: 450px);
@@ -37,6 +38,24 @@ li{
 *{
   scroll-behavior: smooth;
   z-index: 100;
+}
+
+input{
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: 0;
+}
+
+input:hover{
+  outline: 0;
+}
+
+button{
+  background-color: unset;
+  border: unset;
+  color: inherit;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {
@@ -78,6 +97,13 @@ header{
 
 .gradient__text{
   background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient__text2{
+  background: var(--gradient-text2);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
