@@ -4,6 +4,7 @@ import './Header.css'
 import { BiPhone } from 'react-icons/bi'
 import { BsWhatsapp } from 'react-icons/bs'
 import { BiMenu } from 'react-icons/bi'
+import { contacts } from '../../utils/constants'
 
 const Header = () => {
   return (
@@ -18,8 +19,8 @@ const Header = () => {
         </ul>
       </nav>
       <div className='header-buttons'>
-        <span className='contact-btn whatsapp'><BsWhatsapp /> <span className='contact-btn__text'>whatsapp</span></span>
-        <span className='contact-btn telephone'><BiPhone /> <span className='contact-btn__text'>6 55 06 18 36</span></span>
+        <span className='contact-btn whatsapp'><a href={contacts.whatsapp} target="_blank" rel="noopener noreferrer"><BsWhatsapp /><span className='contact-btn__text'>whatsapp</span></a> </span>
+        <span className='contact-btn telephone'><BiPhone /> <span className='contact-btn__text'>{contacts.phone}</span></span>
         <div className='toggle-menu'>
           <div className='nav-button'><BiMenu data-aos="fade-left" /></div>
           <nav className='small-nav'>
