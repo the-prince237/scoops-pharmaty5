@@ -91,6 +91,9 @@ export const HeroWrapper = styled.section`
         border: solid 1px rgba(250, 250, 250, 0.3);
         border-radius: 5px;
         justify-content: flex-start;
+        :last-child:hover{
+          background: var(--color-main)
+        }
       }
     }
   }
