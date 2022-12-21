@@ -1,8 +1,8 @@
 const contacts = {
-  phone: "655 061 836",
-  email: "temgoua484@gmail.com",
+  phone: "697 952 344",
+  email: "ndjifackernest@gmail.com",
   whatsapp: "http://blablabla.com",
-  location: "mbankolo"
+  location: "Yaoundé - Mbankolo"
 }
 
 export default contacts;

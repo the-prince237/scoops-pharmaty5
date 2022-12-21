@@ -5,6 +5,7 @@ import { MdDomain, MdProductionQuantityLimits, MdLocationPin } from 'react-icons
 import { BsWhatsapp, BsMailbox } from 'react-icons/bs'
 
 import './Footer.css'
+import { contacts } from '../../utils/constants'
 
 const Footer = () => {
   return (
@@ -44,19 +45,19 @@ const Footer = () => {
         <ul>
           <li>
             <BiPhone />
-            <p>téléphone</p>
+            <p>{contacts.phone}</p>
           </li>
           <li>
             <BsWhatsapp />
-            <p>whatsapp</p>
+            <p><a href={contacts.whatsapp}>whatsapp</a></p>
           </li>
           <li>
             <BsMailbox />
-            <p>email</p>
+            <p>{contacts.email}</p>
           </li>
           <li>
             <MdLocationPin />
-            <p>localisation</p>
+            <p>{contacts.location}</p>
           </li>
         </ul>
       </section>

@@ -1,7 +1,7 @@
 const cw = {
   hero: {
-    title: "",
-    description: ""
+    title: "Naturopathie Vision Holistique",
+    description: "Nous oeuvrons tous les jours pour une Afrique et un Monde meilleur."
   },
   mission: {
     title: "",
