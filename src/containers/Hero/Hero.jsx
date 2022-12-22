@@ -14,17 +14,20 @@ const Hero = () => {
       <div className='left-side' data-aos="fade-right">
         <h1 className='title1 gradient__text'>{cw.hero.title}</h1>
         <p className="text1">{cw.hero.description}</p>
-        <div className='hero-buttons' data-aos="fade-up">
-          <span className={`button ${contactsOn ? "contact-btn_on" : "contact-btn_off"}`} onClick={() => setContactsOn((contactsOn) => !contactsOn)}>Contacez nous</span>
-          <span className='button'>Consultez</span>
+        <div className='hero-buttons'>
+          <form onSubmit={(e) => e.preventDefault()}>
+            <input type="text" name="email" id="" placeholder='Entrez votre adresse email' />
+            <button type='submit' className='button consult-btn'>Consultez</button>
+          </form>
+          <button className={`button contact-btn ${contactsOn ? "contact-btn_on" : "contact-btn_off"}`} onClick={() => setContactsOn((contactsOn) => !contactsOn)}>Contacez nous</button>
         </div>
         {contactsOn && 
           <div data-aos="fade-up" className='contact-infos'>
             <div className="space"></div>
             <div className="contact-infos__container">
-              <span className='contact-info'><BiPhone />| <p>{contacts.phone}</p></span>
-              <span className='contact-info'><BsMailbox />|<p>{contacts.email}</p></span>
-              <a className='contact-info' href={contacts.whatsapp}><BsWhatsapp /> | <i>suivez le lien whatsapp</i> </a>
+              <span className='contact-info'><BiPhone /><p>{contacts.phone}</p></span>
+              <span className='contact-info'><BsMailbox /><p>{contacts.email}</p></span>
+              <a className='contact-info' href={contacts.whatsapp}><BsWhatsapp /><i>suivez le lien whatsapp</i> </a>
             </div>
           </div>
         }
