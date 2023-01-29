@@ -9,7 +9,7 @@ if git diff-index --quiet HEAD --;
         echo WORK TREE VERY VERY CLEAN ":)"
 
         # push project
-        git push -u github HEAD
+        git push -u origin HEAD
 
         # build
         yarn build
