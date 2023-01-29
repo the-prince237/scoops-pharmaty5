@@ -65,13 +65,13 @@ button{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background-color: var(--color-main);
+  background-color: unset;
   border-radius: 1px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--color-secondary); 
+  background: var(--color-main); 
   border-radius: 1px;
 }
 
