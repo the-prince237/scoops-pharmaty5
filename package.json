@@ -21,8 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "qcommit": "sh scripts/commit.sh",
-    "ghdeploy": "sh scripts/deploy.sh"
+    "commit": "sh scripts/commit.sh",
+    "deploy": "sh scripts/deploy.sh"
   },
   "eslintConfig": {
     "extends": [
