@@ -4,12 +4,13 @@ import './Header.css'
 import { BiPhone } from 'react-icons/bi'
 import { BsWhatsapp } from 'react-icons/bs'
 import { BiMenu } from 'react-icons/bi'
+import logo from '../../assets/logo.png'
 import { contacts } from '../../utils/constants'
 
 const Header = () => {
   return (
     <header>
-      <div className='logo'><img src="favicon.png" alt="scoops-pharmacy" data-aos="fade-right" /><span className='logo--text'>SCOOPS <span className='black'>PHARMATY5</span></span></div>
+      <div className='logo'><img src={logo} alt="scoops-pharmacy" data-aos="fade-right" /><span className='logo--text'>SCOOPS <span className='black'>PHARMATY5</span></span></div>
       <nav className='large-nav'>
         <ul>
           <li className='nav-link'><div className='link-dot'/><a href="#mission">Mission</a></li>

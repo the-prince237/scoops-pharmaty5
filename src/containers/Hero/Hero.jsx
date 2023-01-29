@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { BiPhone } from 'react-icons/bi'
 import { BsWhatsapp, BsMailbox } from 'react-icons/bs'
 
+import heroImg from '../../assets/photos/hero.png'
+
 import { useFormContext } from '../../context'
 
 import { contacts, cw } from '../../utils/constants'
@@ -37,7 +39,7 @@ const Hero = () => {
         }
       </div>
       <div className='hero-img' data-aos="fade-down" id='mission'>
-        <img src="/images/heroImage.png" alt="" />
+        <img src={ heroImg } alt="" />
       </div>
     </HeroWrapper>
   )

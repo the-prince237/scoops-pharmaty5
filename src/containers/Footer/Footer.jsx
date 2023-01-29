@@ -4,6 +4,8 @@ import { BiGitCommit, BiPhone } from 'react-icons/bi'
 import { MdDomain, MdProductionQuantityLimits, MdLocationPin } from 'react-icons/md'
 import { BsWhatsapp, BsMailbox } from 'react-icons/bs'
 
+import logo from '../../assets/logo.png'
+
 import './Footer.css'
 import { contacts } from '../../utils/constants'
 
@@ -11,7 +13,7 @@ const Footer = () => {
   return (
     <footer>
       <section className='footer--logo logo'>
-        <img data-aos="fade-down" src="favicon.png" alt="" />
+        <img data-aos="fade-down" src={logo} alt="" />
         <div data-aos="fade-right" className='title2 logo--text'>SCOOPS <br /> PHARMATY 5</div>
       </section>
       <section className='footer--nav' data-aos="fade-down">
