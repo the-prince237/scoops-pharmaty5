@@ -22,7 +22,7 @@ if git diff-index --quiet HEAD --;
         git --work-tree build commit -m "Deploy"
 
         # push build 
-        git push github HEAD:gh-pages --force
+        git push origin HEAD:gh-pages --force
 
         # remove build folder : dist and gh-pages branch
         rm -r build
