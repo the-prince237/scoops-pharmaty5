@@ -18,14 +18,14 @@ if git diff-index --quiet HEAD --;
         git checkout --orphan gh-pages
 
         # navigate into the build output directory, add and commit changes
-        git --work-tree dist add --all
-        git --work-tree dist commit -m "Deploy"
+        git --work-tree build add --all
+        git --work-tree build commit -m "Deploy"
 
         # push build 
         git push github HEAD:gh-pages --force
 
         # remove build folder : dist and gh-pages branch
-        rm -r dist
+        rm -r build
         git checkout -f main
         git branch -D gh-pages
 
