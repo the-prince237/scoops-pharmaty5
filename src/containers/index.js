@@ -5,6 +5,7 @@ import Mission from './Mission/Mission'
 import Products from './Products/Products'
 import Specialities from './Specialities/Specialities'
 import Testimonials from './Testimonials/Testimonials'
+import FormModal from './FormModal/FormModal'
 
 export {
   Footer,
@@ -14,4 +15,5 @@ export {
   Products,
   Specialities,
   Testimonials,
+  FormModal
 }

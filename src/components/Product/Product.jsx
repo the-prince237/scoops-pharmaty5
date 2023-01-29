@@ -18,7 +18,7 @@ const Product = ({index, product}) => {
       data-aos={`fade-${setAosDir(index+1)}`}
     >
       <ProductImage>
-        {picture}-{index}
+        <img src={picture} alt={name} />
       </ProductImage>
       <ProductHeader>
         <h1>{name.split(" ").map((word, index) => (

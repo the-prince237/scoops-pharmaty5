@@ -1,0 +1,36 @@
+.formModal{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+  z-index: 999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box{
+  background-color: white;
+  width: 70vh;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
+.form-box .form-box--header{
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-box .form-box--header svg{
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 3px;
+  border-radius: 5px;
+  color: white;
+}

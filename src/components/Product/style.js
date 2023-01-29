@@ -18,16 +18,29 @@ export const ProductImage = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
-  color: #333;
-  background: white;
-  width: 150px;
-  height: 150px;
   position: absolute;
   top: -50px;
   left: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 75px;
+  cursor: pointer;
+  z-index: 200;
+  transition: 700ms ease-in-out;
+  :hover{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(15px);
+    border-radius: inherit;
+    & img{
+      width: 250px;
+    }
+  }
+  img{
+    width: 120px;
+    position: relative;
+    z-index: 200;
+  }
 `
 
 export const ProductHeader = styled.div`
@@ -36,6 +49,7 @@ export const ProductHeader = styled.div`
   flex-direction: column;
   align-items: end;
   width: 100%;
+  z-index: 1;
   h1{
     max-width: 70%;
     word-wrap: wrap;
@@ -44,6 +58,7 @@ export const ProductHeader = styled.div`
 
 export const ProductTypes = styled.div`
   display: flex;
+  z-index: 1;
   span{
     padding-left:5px;
     margin-left: 5px;
@@ -63,6 +78,7 @@ export const ProductBody = styled.div`
   margin-bottom: 50px;
   width: 100%;
   display: flex;
+  z-index: 1;
   flex-direction: column;
   .description{
     display: flex;
@@ -92,6 +108,7 @@ export const ToTreats = styled.div`
   margin-top: 15px;
   padding-bottom: 15px;
   border-bottom: solid 1px rgba(250, 250, 250, 0.2);
+  z-index: 1;
   .icon{
     display: flex;
     align-items: center;
@@ -127,6 +144,7 @@ export const ProductFooter = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
   h3{
     display: flex;
     align-items: center;

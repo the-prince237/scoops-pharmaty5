@@ -2,7 +2,8 @@ import { useEffect } from 'react';
 import './App.css';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { Products ,Specialities, Hero, Mission, Header, Footer } from './containers'
+import { Products ,Specialities, Hero, Mission, Header, Footer, FormModal } from './containers'
+import { useFormContext } from './context';
 
 function App() {
 
@@ -13,16 +14,19 @@ function App() {
     })
   })
 
+  const { form } = useFormContext()
+
   return (
     <div className="App">
-      <Header />
-      <div className="deco" />
-      <Hero />
-      <Mission />
-      <Specialities />
-      <Products />
-      {/* <Testimonials /> */}
-      <Footer />
+        <Header />
+        <div className="deco" />
+        <Hero />
+        <Mission />
+        <Specialities />
+        <Products />
+        {/* <Testimonials /> */}
+        <Footer />
+        {form.opened && <FormModal />}
     </div>
   );
 }
