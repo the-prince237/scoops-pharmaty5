@@ -98,6 +98,81 @@ header .logo img{
   border: solid 1px var(--color-main);
 }
 
+.header-buttons .choose-language{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bolder;
+  color:rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.header-buttons .languages{
+  border: solid var(--color-secondary);
+  border-radius: 100px;
+  padding: 10px 15px;
+  position: relative;
+  display: flex;
+  gap: 30px;
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+.header-buttons .languages:hover{
+  box-shadow: 0 0  10px rgba(0, 0, 0, 0.3);
+}
+
+.header-buttons .languages:hover button{
+  background-color: var(--color-secondary);
+}
+
+.header-buttons .languages button{
+  position: absolute;
+  background-color: skyblue;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2px;
+  right: 3px;
+  transition: 300ms;
+  color: white;
+  z-index: 1000;
+  font-weight: bolder;
+  text-transform:uppercase;
+}
+
+.header-buttons .languages .left{
+  left: 3px;
+  right: unset;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-buttons .languages .right{
+  right: 3px;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-buttons .choose-language .new{
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 15px;
+}
+
+.header-buttons .choose-language .new img{
+  border: none;
+  padding: none;
+  width: 35px;
+  position: absolute;
+  z-index: 1;
+  left: 0%;
+}
+
 .header-buttons .whatsapp{
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }

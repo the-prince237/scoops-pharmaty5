@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState} from "react";
+import { useEffect } from "react";
 
 
 // creating and exporting context for form handling
@@ -57,11 +58,15 @@ const LanguageContext = createContext();
 
 export const LanguageContextProvicer = ({ children }) => {
   
-  const [language, setLanguage] = useState("en")
+  const [language, setLanguage] = useState(localStorage.getItem("sp-language") || "en")
 
   function switchLanguage() {
     language === "en" ? setLanguage("fr") : setLanguage("en");
   }
+
+  useEffect(() => {
+    localStorage.setItem("sp-language", language)
+  }, [language])
 
   return (
     <LanguageContext.Provider value={
