@@ -1,8 +1,10 @@
 import React, { createContext, useContext, useState} from "react";
 
+
+// creating and exporting context for form handling
 const FormContext = createContext();
 
-export const FormContextProvider = ({ children }) => {
+const FormContextProvider = ({ children }) => {
   const initialForm = {
     firstName: "",
     lastName: "",
@@ -48,3 +50,26 @@ export const FormContextProvider = ({ children }) => {
 }
 
 export const useFormContext = () => useContext(FormContext);
+
+
+// creating and exporting context for language handling
+const LanguageContext = createContext();
+
+const LanguageContextProvicer = ({ children }) => {
+  
+  const [language, setLanguage] = useState("en")
+
+  function switchLanguage() {
+    language === "en" ? setLanguage("fr") : setLanguage("en");
+  }
+
+  return (
+    <LanguageContext.Provider value={
+      { language, switchLanguage }
+    }>
+      { children }
+    </LanguageContext.Provider>
+  )
+}
+
+export const useLanguageContext = () => useContext(LanguageContext)
