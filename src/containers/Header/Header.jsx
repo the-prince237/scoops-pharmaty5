@@ -29,7 +29,6 @@ const Header = () => {
         <div className='choose-language'>
           <div className='new'>
             <p>{`${language === "fr" ? "Nouveau" : "New"}`}</p>
-            <img src={nouveau} alt="nouveau" />
           </div>
           <div className="languages" onClick={switchLanguage}>
             <span>fr</span>

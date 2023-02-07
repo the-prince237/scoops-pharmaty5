@@ -160,17 +160,16 @@ header .logo img{
 .header-buttons .choose-language .new{
   display: flex;
   align-items: center;
-  position: relative;
-  margin-right: 15px;
-}
-
-.header-buttons .choose-language .new img{
-  border: none;
-  padding: none;
-  width: 35px;
   position: absolute;
-  z-index: 1;
-  left: 0%;
+  bottom: -5px;
+  right: 0;
+  background-color: var(--color-main);
+  color: white;
+  z-index: 1000;
+  padding: 2px 10px;
+  border-radius: 50px;
+  border: solid 1px white;
+  font-size: 10px;
 }
 
 .header-buttons .whatsapp{
