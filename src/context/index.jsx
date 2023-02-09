@@ -71,7 +71,7 @@ export const LanguageContextProvicer = ({ children }) => {
   const [cw, setCw] = useState(
     {
       hero: {
-        title: translator("Naturopathie Vision Holistique", "Holistic vision naturopathy"),
+        title: translator("Naturothérapie Vision Holistique", "naturopathy holistic vision"),
         description: translator("Nous oeuvrons tous les jours pour une Afrique et un Monde meilleur.", "We work everyday for a better Africa and a better future.")
       },
       mission: {
