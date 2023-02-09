@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { useLanguageContext } from '../../context/index.jsx'
+
 import { SpecDots, SpecLink, SpecWrapper } from './specStyle.js'
 import { specialities } from '../../utils/constants'
 import { Speciality } from '../../components'
@@ -7,11 +9,12 @@ import { SpecNav } from './specStyle'
 const Specialities = () => {
 
   const [activeSpec, setActiveSpec] = useState(specialities[0])
+  const { cw } = useLanguageContext()
 
   return (
     <SpecWrapper className='section__margin'>
-      <h1 className="title2">Nos Spécialités</h1>
-      <p className='text1'>Il est une solution pour tout, même pour les situations les plus difficiles à surpasser ! <br /><b>Nous savons quelle est la voie à suivre !</b></p>
+      <h1 className="title2">{ cw.specialities.title }</h1>
+      <p className='text1'>{ cw.specialities.description } <br /><b>{ cw.specialities.subDescription }</b></p>
       <SpecNav>
         {specialities.map(({title, description, color, Icon, image, examples}, index) => (
           <SpecLink 

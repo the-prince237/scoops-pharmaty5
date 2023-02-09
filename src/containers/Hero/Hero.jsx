@@ -4,15 +4,16 @@ import { BsWhatsapp, BsMailbox } from 'react-icons/bs'
 
 import heroImg from '../../assets/photos/hero.png'
 
-import { useFormContext } from '../../context'
+import { useFormContext, useLanguageContext } from '../../context'
 
-import { contacts, cw } from '../../utils/constants'
+import { contacts } from '../../utils/constants'
 import { HeroWrapper } from './heroStyle'
 
 const Hero = () => {
 
   const [contactsOn, setContactsOn] = useState(false)
   const { setEmail, handleChange, form } = useFormContext()
+  const { language, cw } = useLanguageContext()
 
 
   return (
@@ -23,9 +24,9 @@ const Hero = () => {
         <div className='hero-buttons'>
           <form onSubmit={(e) => setEmail(e)}>
             <input type="email" name="email" value={form.email} onChange={(e) => handleChange(e)} id="" placeholder='Entrez votre adresse email' />
-            <button type='submit' className='button consult-btn'>Consultez</button>
+            <button type='submit' className='button consult-btn'>{ language === "fr" ? "Consultez" : "Consult" }</button>
           </form>
-          <button className={`button contact-btn ${contactsOn ? "contact-btn_on" : "contact-btn_off"}`} onClick={() => setContactsOn((contactsOn) => !contactsOn)}>Contacez nous</button>
+          <button className={`button contact-btn ${contactsOn ? "contact-btn_on" : "contact-btn_off"}`} onClick={() => setContactsOn((contactsOn) => !contactsOn)}>{ language === "fr" ? "Contacez nous" : "Contact us"}</button>
         </div>
         {contactsOn && 
           <div data-aos="fade-up" className='contact-infos'>
