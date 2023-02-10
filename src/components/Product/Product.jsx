@@ -24,7 +24,7 @@ const Product = ({index, product}) => {
         <h1>{name.split(" ").map((word, index) => (
           <div key={`word-${index}-${word}`}>{word}</div>
         ))}</h1>
-        <ProductTypes>{types.map((type, index) => (<span key={index}>{type}</span>))}</ProductTypes>
+        <ProductTypes>{types?.map((type, index) => (<span key={index}>{type}</span>))}</ProductTypes>
       </ProductHeader>
       <ProductBody>
         <div className='description'>
@@ -35,7 +35,7 @@ const Product = ({index, product}) => {
       <ToTreats>
         <div className="icon"><FaDisease /></div>
         <div className="items">
-          {toTreat.map((tt, index) => (<span className='text1' key={index}>{tt}</span>))}
+          {toTreat?.map((tt, index) => (<span className='text1' key={index}>{tt}</span>))}
         </div>
       </ToTreats>
     </ProductWrapper>

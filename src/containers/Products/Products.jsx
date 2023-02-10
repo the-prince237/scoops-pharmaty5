@@ -14,7 +14,7 @@ const Products = () => {
       <p className="text1">{ cw.products.description }</p>
       <ProductsList>
         {
-          products.map((prod, index) => 
+          products?.map((prod, index) => 
             <Product index={index} key={index} product={prod} />
           )
         }
