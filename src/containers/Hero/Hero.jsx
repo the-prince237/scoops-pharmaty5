@@ -34,7 +34,7 @@ const Hero = () => {
             <div className="contact-infos__container">
               <span className='contact-info'><BiPhone /><p>{contacts.phone}</p></span>
               <span className='contact-info'><BsMailbox /><p>{contacts.email}</p></span>
-              <a className='contact-info' href={contacts.whatsapp}><BsWhatsapp /><i>suivez le lien whatsapp</i> </a>
+              <a className='contact-info' href={contacts.whatsapp} target="_blank"><BsWhatsapp /><i>suivez le lien whatsapp</i> </a>
             </div>
           </div>
         }
