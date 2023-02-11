@@ -52,16 +52,14 @@ export const SpecLink = styled.span`
 export const SpecDots = styled.div`
   display: flex;
   gap: 30px;
-  div{
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
-    border:${({isActive}) => isActive ? `unset` : "solid 2px gray"};
-    color: ${({isActive}) => isActive ? "white" : "gray"};
-    background: ${({isActive}) => isActive ? "var(--color-secondary)" : "unset"};
-    border-radius: 5px;
-    }
+  align-items: center;
 `
 
 export const SpecDot = styled.div`
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border:${({isActive}) => isActive ? `solid 2px var(--color-secondary)` : "solid 2px gray"};
+  background: ${({isActive}) => isActive ? "var(--color-secondary)" : "unset"};
 `

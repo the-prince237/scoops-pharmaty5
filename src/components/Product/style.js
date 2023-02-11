@@ -40,6 +40,7 @@ export const ProductImage = styled.div`
     width: 120px;
     position: relative;
     z-index: 200;
+    border-radius: 5px;
   }
 `
 
@@ -170,5 +171,22 @@ export const ProductFooter = styled.div`
         font-size: unset;
       }
     }
+  }
+`
+
+export const ContactUs = styled.a`
+  display: flex;
+  margin: auto;
+  width: fit-content;
+  background: var(--color-secondary);
+  padding: 10px 15px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  border-radius: 100px;
+  margin-top: 5px;
+  opacity: 0.8;
+  :hover{
+    opacity: 1;
   }
 `

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useLanguageContext } from '../../context/index.jsx'
 
-import { SpecDots, SpecLink, SpecWrapper } from './specStyle.js'
+import { SpecDot, SpecDots, SpecLink, SpecWrapper } from './specStyle.js'
 import { specialities } from '../../utils/constants'
 import { Speciality } from '../../components'
 import { SpecNav } from './specStyle'
@@ -18,9 +18,9 @@ const Specialities = () => {
       <SpecNav>
         {specialities.map(({title, description, color, Icon, image, examples}, index) => (
           <SpecLink 
-            data-aos="fade-right" 
-            data-aos-duration="600" 
-            data-aos-delay={`${300+index*10}`} 
+            // data-aos="fade-right" 
+            // data-aos-duration="600" 
+            // data-aos-delay={`${300+index*10}`} 
             key={index} isActive = {title === activeSpec.title} 
             onClick={() => setActiveSpec({title, description, color, Icon, image, examples})}>
               <span className='spec-link__text'>{title}</span>
@@ -31,9 +31,9 @@ const Specialities = () => {
       <div className="specialities" data-aos="fade">
         <Speciality speciality={activeSpec} />
       </div>
-      <SpecDots isActive id="prods">
+      <SpecDots id="prods">
         {specialities.map((spec, index) => (
-          <SpecDots key={index} isActive = {spec.title === activeSpec.title} onClick={() => setActiveSpec(spec)}></SpecDots>
+          <SpecDot key={index} isActive = {spec.title === activeSpec.title} onClick={() => setActiveSpec(spec)}></SpecDot>
         ))}
       </SpecDots>
     </SpecWrapper>

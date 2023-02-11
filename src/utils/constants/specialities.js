@@ -39,23 +39,23 @@ const specialities = [
       },
     ]
   }, 
-  {
-    title: "PÉDIATRIE",
-    description: "Nous occupons.",
-    Icon: FaChild,
-    color: 'var(--color-secondary)',
-    image: two,
-    examples: [
-      {
-        name: "Arthrose",
-        status: "Guérison Complète"
-      },
-      {
-        name: "Rhumatismes",
-        status: "Guérison Complète"
-      },
-    ]
-  }
+  // {
+  //   title: "PÉDIATRIE",
+  //   description: "Nous occupons.",
+  //   Icon: FaChild,
+  //   color: 'var(--color-secondary)',
+  //   image: two,
+  //   examples: [
+  //     {
+  //       name: "Arthrose",
+  //       status: "Guérison Complète"
+  //     },
+  //     {
+  //       name: "Rhumatismes",
+  //       status: "Guérison Complète"
+  //     },
+  //   ]
+  // }
 ]
 
 export default specialities;

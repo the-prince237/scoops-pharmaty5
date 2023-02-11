@@ -2,6 +2,7 @@ import artemisia from '../../assets/products/ARTEMISIA AFRA.png'
 import lekki from '../../assets/products/LEKKI_DANEWEL-removebg-preview.png'
 import vermifuge from '../../assets/products/WORM_120G-removebg-preview.png'
 import detox from '../../assets/products/detoxplus.jpeg'
+import toniccoffee from '../../assets/products/toniccoffee.jpeg'
 
 const products = [
   {
@@ -35,6 +36,14 @@ const products = [
     // toTreat: ["drépanocitose", "anémie sévère", "+"],
     // composition: ["compo A", "compo B", "..."],
     description: "Antibiotique, purificateur et évacuateur pour le nettoyage du système digestif, de la ceinture rénale et du système sanguin."
+  },
+  {
+    name: "Tonic Coffee",
+    types: ["poudre"],
+    picture: toniccoffee,
+    // toTreat: ["drépanocitose", "anémie sévère", "+"],
+    // composition: ["compo A", "compo B", "..."],
+    description: "Café relaxant et tonifiant, conditionné en sachets de 10, 20 ou 30 infusettes."
   }
 ]
 

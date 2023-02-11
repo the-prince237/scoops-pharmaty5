@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProductBody, ProductHeader, ProductImage, ProductTypes, ProductWrapper, ToTreats } from './style';
+import { ProductBody, ProductHeader, ProductImage, ProductTypes, ProductWrapper, ToTreats, ContactUs } from './style';
 import { BsInfo } from 'react-icons/bs'
 import { FaDisease } from 'react-icons/fa';
 
@@ -15,7 +15,7 @@ const Product = ({index, product}) => {
 
   return (
     <ProductWrapper
-      data-aos={`fade-${setAosDir(index+1)}`}
+      // data-aos={`fade-${setAosDir(index+1)}`}
     >
       <ProductImage>
         <img src={picture} alt={name} />
@@ -32,12 +32,15 @@ const Product = ({index, product}) => {
           <p className='text1'>{description}</p>
         </div>
       </ProductBody>
-      <ToTreats>
+      {toTreat && <ToTreats>
         <div className="icon"><FaDisease /></div>
         <div className="items">
           {toTreat?.map((tt, index) => (<span className='text1' key={index}>{tt}</span>))}
         </div>
-      </ToTreats>
+      </ToTreats>}
+      <ContactUs href="https://wa.me/c/237697952344" target="_blank" rel="noopener noreferrer">
+        Contact Us
+      </ContactUs>
     </ProductWrapper>
   )
 }
