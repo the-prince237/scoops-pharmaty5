@@ -36,7 +36,7 @@ const Header = () => {
             <button className={`${language === "fr" ? "left" : "right"}`}>{language}</button>
           </div>
         </div>
-        <a className='contact-btn whatsapp' href={contacts.whatsapp} target="_blank" rel="noopener noreferrer"><BsWhatsapp /><span className='contact-btn__text'>whatsapp</span></a>
+        <a className='contact-btn whatsapp' href={contacts.whatsapp} target="_blank" rel="noopener noreferrer"><BsWhatsapp /><span className='contact-btn__text'>whatsappp</span></a>
         <span className='contact-btn telephone'>
           <BiPhone /> 
           <span className='contact-btn__text'>{contacts.phone}</span>
