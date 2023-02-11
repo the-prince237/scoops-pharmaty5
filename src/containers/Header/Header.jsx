@@ -22,7 +22,7 @@ const Header = () => {
           <li className='nav-link'><div className='link-dot'/><a href="#mission">{`${language === "fr" ? "Mission" : "Mission"}`}</a></li>
           <li className='nav-link'><div className='link-dot'/><a href="#specs">{`${language === "fr" ? "Spécialités" : "Specialities"}`}</a></li>
           <li className='nav-link'><div className='link-dot'/><a href="#prods">{`${language === "fr" ? "Produits" : "Products"}`}</a></li>
-          <li className='nav-link'><div className='link-dot'/><a href="#tests">{`${language === "fr" ? "Témoignages" : "Testimonies"}`}</a></li>
+          {/* <li className='nav-link'><div className='link-dot'/><a href="#tests">{`${language === "fr" ? "Témoignages" : "Testimonies"}`}</a></li> */}
         </ul>
       </nav>
       <div className='header-buttons'>

@@ -55,7 +55,7 @@ const Footer = () => {
           </li>
           <li>
             <BsWhatsapp />
-            <p><a href={contacts.whatsapp}>whatsapp</a></p>
+            <p><a href={contacts.whatsapp} target="_blank">whatsapp</a></p>
           </li>
           <li>
             <BsMailbox />
