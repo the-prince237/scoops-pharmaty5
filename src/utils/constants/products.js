@@ -1,8 +1,8 @@
 import artemisia from '../../assets/products/ARTEMISIA AFRA.png'
 import lekki from '../../assets/products/LEKKI_DANEWEL-removebg-preview.png'
 import vermifuge from '../../assets/products/WORM_120G-removebg-preview.png'
-import detox from '../../assets/products/detoxplus.jpeg'
-import toniccoffee from '../../assets/products/toniccoffee.jpeg'
+import detox from '../../assets/products/detoxplus.png'
+import toniccoffee from '../../assets/products/toniccoffee.png'
 
 const products = [
   {
