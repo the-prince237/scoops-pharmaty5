@@ -12,6 +12,7 @@ header{
   background-color: rgba(250, 250, 250, 0.1);
   backdrop-filter: blur(15px);
   z-index: 99999999;
+  flex-wrap: wrap;
 }
 
 header .logo{
@@ -265,5 +266,25 @@ header .logo img{
   .header-buttons .whatsapp{
     color: white;
     background-color: var(--color-main);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header{
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-left: 15px;
+    gap: 15px;
+  }
+
+  header .logo{
+    margin-left: 0;
+  }
+
+  header .header-buttons{
+    display: flex;
+    width: calc(100% - 15px);
+    justify-content: space-between;
   }
 }

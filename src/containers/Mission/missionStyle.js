@@ -20,4 +20,9 @@ export const Statistics = styled.div`
   flex-wrap: wrap;
   gap: 30px;
   overflow: hidden;
+  @media screen and (max-width: 700px){
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
 `

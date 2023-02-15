@@ -9,8 +9,9 @@ export const ProductWrapper = styled.div`
   position: relative;
   border-bottom: green solid 3px;
   color: white;
+  max-width: 80%;
   @media screen and (max-width: 500px){
-    width: 300px;
+    padding: 10px 15px;
   }
 `
 

@@ -14,11 +14,19 @@ export const HeroWrapper = styled.section`
     text-align: left;
     margin: 50px;
     position: relative;
+    @media screen and (max-width: 550px){
+      margin: 30px;
+    }
   }
   .hero-buttons{
     display: flex;
     gap: 15px;
     align-items: center;
+    flex-wrap: wrap;
+    @media screen and (max-width: 800px){
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   form{
     display: flex;
