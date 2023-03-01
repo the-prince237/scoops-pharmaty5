@@ -128,4 +128,7 @@ export const HeroWrapper = styled.section`
       background: blue;
     }
   }
+  @media screen and (max-width: 550px) {
+    margin-top: 150px;
+  }
 `
