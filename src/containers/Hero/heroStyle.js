@@ -124,5 +124,8 @@ export const HeroWrapper = styled.section`
         }
       }
     }
+    .contact-info__email:hover{
+      background: blue;
+    }
   }
 `

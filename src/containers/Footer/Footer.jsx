@@ -59,7 +59,7 @@ const Footer = () => {
           </li>
           <li>
             <BsMailbox />
-            <p>{contacts.email}</p>
+            <p><a href={`mailto:${ contacts.email }`}>{ contacts.email }</a></p>
           </li>
           <li>
             <MdLocationPin />
@@ -68,11 +68,13 @@ const Footer = () => {
         </ul>
       </section>
       <section className='footer--consult' data-aos="fade-left">
-        <h3>{ language === "fr" ? "Consultez" : "Consult" }</h3>
-        <form>
-          <input type="text"  placeholder='Addresse email'/>
-          <button type="submit" onClick={(e) => e.preventDefault()}>{ language === "fr" ? "Consultez" : "Consult" }</button>
-        </form>
+        <h3>{language === "fr" ? "Consultez" : "Consult"}</h3>
+        <a className="consult" href={contacts.whatsapp} target="_blank">
+        {/* <form> */}
+          {/* <input type="text"  placeholder='Addresse email'/> */}
+          <button type="submit">{ language === "fr" ? "Consultez" : "Consult" }</button>
+        {/* </form> */}
+        </a>
       </section>
     </footer>
   )
