@@ -28,7 +28,7 @@ export const HeroWrapper = styled.section`
       align-items: flex-start;
     }
   }
-  form{
+  .consult{
     display: flex;
     margin-top: 30px;
     border: solid 2px var(--color-main);
