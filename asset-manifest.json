@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2662d544.css",
+    "main.js": "/static/js/main.e36865fa.js",
+    "static/js/787.b4dc82fa.chunk.js": "/static/js/787.b4dc82fa.chunk.js",
+    "static/media/hero.png": "/static/media/hero.6f2ee67bdbd12f741c6c.png",
+    "static/media/2.jpeg": "/static/media/2.2326a14d96441b32c05d.jpeg",
+    "static/media/WORM_120G-removebg-preview.png": "/static/media/WORM_120G-removebg-preview.e0e7c09ef2107c724595.png",
+    "static/media/ARTEMISIA AFRA.png": "/static/media/ARTEMISIA AFRA.740d0b62347ec6623dcc.png",
+    "static/media/1.jpeg": "/static/media/1.85b6e5a8b395c6168725.jpeg",
+    "static/media/toniccoffee.png": "/static/media/toniccoffee.8e1e1f113a2d4b1c1c5d.png",
+    "static/media/detoxplus.png": "/static/media/detoxplus.0c0942e0a6d1d4fa0fea.png",
+    "static/media/LEKKI_DANEWEL-removebg-preview.png": "/static/media/LEKKI_DANEWEL-removebg-preview.6ab30ef49b8a8a092ce5.png",
+    "static/media/logo.png": "/static/media/logo.76fdbc968ec14664411f.png",
+    "static/media/new.gif": "/static/media/new.c83685218eb35d6954d5.gif",
+    "index.html": "/index.html",
+    "main.2662d544.css.map": "/static/css/main.2662d544.css.map",
+    "main.e36865fa.js.map": "/static/js/main.e36865fa.js.map",
+    "787.b4dc82fa.chunk.js.map": "/static/js/787.b4dc82fa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2662d544.css",
+    "static/js/main.e36865fa.js"
+  ]
+}
