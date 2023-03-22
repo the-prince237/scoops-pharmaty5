@@ -18,6 +18,7 @@ const Header = () => {
     <header>
       <div className='logo'><img src={logo} alt="scoops-pharmacy" data-aos="fade-right" /><span className='logo--text'>SCOOPS <span className='black'>PHARMATY5</span></span></div>
       <nav className='large-nav'>
+        <span>joel</span>
         <ul>
           <li className='nav-link'><div className='link-dot'/><a href="#mission">{`${language === "fr" ? "Mission" : "Mission"}`}</a></li>
           <li className='nav-link'><div className='link-dot'/><a href="#specs">{`${language === "fr" ? "Spécialités" : "Specialities"}`}</a></li>
